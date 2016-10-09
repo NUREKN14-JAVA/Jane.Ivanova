@@ -27,8 +27,6 @@
 			<formatter type="plain"/>
 			<test name="kn_14_5.Ivanova.UserTest">
 			</test>
-			<test name="kn_14_5.Ivanova.UserTest.testGetAge">
-			</test>
 		</junit>	
 	</target>
 </project>
