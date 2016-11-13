@@ -3,7 +3,10 @@
 	<property name="main-java-dir" value="${basedir}/src/main/java"/>
 	<property name="test-java-dir" value="${basedir}/src/test/java"/>
 	<property name="build-dir" value="${basedir}/bin"/>
-		
+	<property name="lib-dir" value="${basedir}/lib"/>
+	<property name="test-resources-dir" value="${basedir}/src/test/resources"/>
+	<property name="main-resources-dir" value="${basedir}/src/main/resources"/>
+	
 	<target name="clean">
 		<delete dir="${build-dir}"/>
 	</target>
@@ -30,3 +33,4 @@
 		</junit>	
 	</target>
 </project>
+
