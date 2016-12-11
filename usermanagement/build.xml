@@ -3,14 +3,17 @@
 	<property name="main-java-dir" value="${basedir}/src/main/java"/>
 	<property name="test-java-dir" value="${basedir}/src/test/java"/>
 	<property name="build-dir" value="${basedir}/bin"/>
-		
+	<property name="lib-dir" value="${basedir}/lib"/>
+	<property name="test-resources-dir" value="${basedir}/src/test/resources"/>
+	<property name="main-resources-dir" value="${basedir}/src/main/resources"/>
+	
 	<target name="clean">
 		<delete dir="${build-dir}"/>
 	</target>
 	
-	<target name="init">
-			<mkdir dir="${build-dir}"/>
-	</target>
+	<target name="init" depends="clean">
+			<mkdir dir="${build-dir}" />
+		</target>
 	
 	<target name="compile" depends="init">
 		<javac srcdir="${main-java-dir}" destdir="${build-dir}"/>
