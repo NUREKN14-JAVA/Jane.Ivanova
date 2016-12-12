@@ -61,7 +61,7 @@ public class AddPanel extends JPanel implements ActionListener {
 		if(cancelButton == null){
 			cancelButton = new JButton();
 			cancelButton.setName("cancelButton");  //$NON-NLS-1$
-			cancelButton.setText(Messages.getString("AddPanel.close"));  //$NON-NLS-1$
+			cancelButton.setText("Cansel");  //$NON-NLS-1$
 			cancelButton.setActionCommand("cancel");  //$NON-NLS-1$
 			cancelButton.addActionListener(this);
 		}
